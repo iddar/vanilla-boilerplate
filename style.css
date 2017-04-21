@@ -1,0 +1,29 @@
+body, body * {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+body {
+  background: #ecf0f1;
+}
+
+#info {
+  text-align: center;
+  padding-top: 100px;
+  color: #2c3e50;
+
+  font-size: 1.2rem;
+  font-family: 'Montserrat', sans-serif;
+}
+
+#info * {
+  margin: 0 auto;
+  margin-bottom: 20px;
+  display: block;
+}
+
+#info a {
+  margin-top: 50px;
+  color: #2980b9;
+}

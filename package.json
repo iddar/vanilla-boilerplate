@@ -1,0 +1,13 @@
+{
+  "name": "dia4",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "browser-sync start --server --files \"**/*.html, **/*.css, **/*.js\""
+  },
+  "author": "iddar olivares <iddar@dbug.mx>",
+  "devDependencies": {
+    "browser-sync": "^2.18.8"
+  }
+}
