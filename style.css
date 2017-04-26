@@ -9,21 +9,47 @@ body {
 }
 
 #info {
-  text-align: center;
-  padding-top: 100px;
+  padding-top: 10px;
   color: #2c3e50;
 
-  font-size: 1.2rem;
   font-family: 'Montserrat', sans-serif;
+
+
 }
 
 #info * {
   margin: 0 auto;
-  margin-bottom: 20px;
   display: block;
 }
 
 #info a {
   margin-top: 50px;
   color: #2980b9;
+}
+
+#info ul {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 20px
+}
+
+#info ul li {
+  padding: 10px 0 ;
+  width: calc(100% / 5.5);
+  text-align: center;
+
+  font-size: .8rem;
+
+  margin-bottom: 10px;
+
+  outline: solid 1px #ababab;
+}
+
+
+#info ul li img {
+  transition: transform ease .3s;
+}
+
+#info ul li img:hover {
+  transform: scale(1.2);
 }
