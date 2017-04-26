@@ -6,6 +6,7 @@ body, body * {
 
 body {
   background: #ecf0f1;
+  padding: 0 20px;
 }
 
 #info {
@@ -15,15 +16,54 @@ body {
 
   font-size: 1.2rem;
   font-family: 'Montserrat', sans-serif;
+
+  user-select: none;
 }
 
-#info * {
-  margin: 0 auto;
-  margin-bottom: 20px;
-  display: block;
+.bar, .controls {
+  display: flex;
+  padding: 50px 0;
+
+  justify-content: space-around;
 }
 
-#info a {
-  margin-top: 50px;
-  color: #2980b9;
+.bar > div {
+  flex: .5;
+  height: 50px;
+}
+
+.bar .one, .player_one {
+  background: red;
+}
+
+.bar .two, .player_two {
+  background: blue;
+}
+
+.controls > div {
+  height: 150px;
+  width: 150px;
+
+  transition: transform ease .3s;
+  cursor: pointer;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.controls > div:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+#start {
+  cursor: pointer;
+  border-radius: 5px;
+  padding: 5px 10px;;
+  outline: 0;
+  border: 0;
+  background: green;
+  color: white;
+  font-size: 1.2rem;
 }

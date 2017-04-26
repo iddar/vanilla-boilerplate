@@ -2,7 +2,8 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <meta name="HandheldFriendly" content="true" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
   <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,600" rel="stylesheet">
@@ -13,13 +14,24 @@
 <body>
 
   <div id="info">
-    <h1>Vanilla Boilerplate</h1>
-    <p>Super simple Boilerplate for vanilla apps.</p>
-    <p>Include basic server and liveroload 👌</p>
-    <a href="https://github.com/iddar/vanilla-boilerplate">view code on github</a>
-    <img src="assets/badget-mit.svg" alt="">
+    <h1>Click Figth</h1>
+    <div class="time">00:00</div>
+    <div class="win"></div>
+
+    <div><button type="button" name="button" id="start">Start</button></div>
+
+    <div class="bar">
+      <div class="one"></div>
+      <div class="two"></div>
+    </div>
+
+    <div class="controls">
+      <div class="player_one" data-player="one"></div>
+      <div class="player_two" data-player="two"></div>
+    </div>
   </div>
 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.4/lodash.min.js" charset="utf-8"></script>
   <script src="app.js" charset="utf-8" defer></script>
 </body>
 </html>
