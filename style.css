@@ -2,28 +2,70 @@ body, body * {
   margin: 0;
   padding: 0;
   border: 0;
+  font-family: 'Montserrat';
 }
 
 body {
   background: #ecf0f1;
+  padding: 0 100px;
 }
 
-#info {
-  text-align: center;
-  padding-top: 100px;
-  color: #2c3e50;
-
-  font-size: 1.2rem;
-  font-family: 'Montserrat', sans-serif;
-}
-
-#info * {
-  margin: 0 auto;
-  margin-bottom: 20px;
+.bt {
+  cursor: pointer;
   display: block;
+  margin: 20px auto;
+  padding: 10px 20px;
+  border-radius: 3px;
+  outline: 0;
+  background: #27ae60;
+  transition: background ease .3s;
+  font-weight: bold;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 1px;
 }
 
-#info a {
-  margin-top: 50px;
-  color: #2980b9;
+.bt:hover {
+  background: #2ecc71;
+}
+
+#mensaje {
+  text-align: center;
+  height: 60px;
+}
+
+#game {
+  min-height: 10px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-column-gap: 30px;
+  grid-row-gap: 30px;
+  margin-bottom: 100px;
+}
+
+#game > div {
+  border: solid 2px #000;
+  background: url('assets/bg.jpg');
+  background-size: cover;
+  transition: transform ease .2s;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+}
+
+#game > div:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+}
+
+#game > div > img {
+  width: 100%;
+  border-radius: 5px;
+  opacity: 0;
+}
+
+#game > div > img.visible {
+  opacity: 1;
+  cursor: default;
+  transform: scale(1.1);
 }

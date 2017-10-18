@@ -8,6 +8,6 @@
   },
   "author": "iddar olivares <iddar@dbug.mx>",
   "devDependencies": {
-    "browser-sync": "^2.18.8"
+    "browser-sync": "^2.18.13"
   }
 }
