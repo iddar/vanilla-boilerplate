@@ -43,6 +43,12 @@ body {
   margin-bottom: 100px;
 }
 
+input {
+  padding: 10px;
+  outline: 0;
+}
+
+
 #game > div {
   border: solid 2px #000;
   background: url('assets/bg.jpg');
@@ -58,13 +64,13 @@ body {
   transform: scale(1.05);
 }
 
-#game > div > img {
+img {
   width: 100%;
   border-radius: 5px;
   opacity: 0;
 }
 
-#game > div > img.visible {
+img.visible {
   opacity: 1;
   cursor: default;
   transform: scale(1.1);
